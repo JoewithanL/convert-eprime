@@ -101,7 +101,8 @@ ENV/
 .mypy_cache/
 
 # PyCharm
-.pytest_cache
+.pytest_cache/
+.idea
 
 # MacOS
 .DS_Store
