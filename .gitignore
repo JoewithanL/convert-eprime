@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# PyCharm
+.pytest_cache
+
+# MacOS
+.DS_Store
