@@ -30,7 +30,7 @@ from collections import OrderedDict
 import numpy as np
 import pandas as pd
 
-from .utils import remove_unicode
+from utils import remove_unicode
 
 
 def etext_to_rcsv(in_file, param_file, out_file=None):
@@ -259,7 +259,7 @@ if __name__ == '__main__':
         raise IOError('Function {0} not in convert_eprime.'.format(function_name))
 
     function = globals()[function_name]
-    n_args = len(inspect.getargspec(function).args)
+    n_args = len(inspect.getfullargspec(function).args)
 
     if n_args != len(sys.argv) - 2:
         raise IOError('Function {0} takes {1} args, not {2}.'.format(function_name,
